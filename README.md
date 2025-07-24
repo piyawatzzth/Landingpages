@@ -8,7 +8,6 @@ Perfect for portfolios, product showcases, personal branding, and startup homepa
 ## 📸 Demo Preview
 
 ![Landing Page Preview](preview.png)  
-> *(Add your screenshot here to show the design)*
 
 ---
 
