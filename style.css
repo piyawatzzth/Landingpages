@@ -1,0 +1,92 @@
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+}
+a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #1f1f1f;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar nav a {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 6rem 1rem;
+  background: #1a1a1a;
+}
+.hero .highlight {
+  color: #00bcd4;
+}
+.hero .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #00bcd4;
+  color: #fff;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.hero .btn:hover {
+  background: #0097a7;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 1rem;
+}
+.section.dark {
+  background: #1f1f1f;
+}
+.section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.projects {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #111;
+  font-size: 0.9rem;
+  color: #888;
+}
