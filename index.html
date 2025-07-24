@@ -1,108 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
-  <body class="bg-gray-900 text-white font-sans scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <!-- Navbar -->
-    <header class="fixed top-0 left-0 w-full bg-gray-800 shadow z-50">
-      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-indigo-400">YourName</h1>
-        <nav class="space-x-6 text-gray-300 text-sm">
-          <a href="#home" class="hover:text-indigo-400">Home</a>
-          <a href="#about" class="hover:text-indigo-400">About</a>
-          <a href="#projects" class="hover:text-indigo-400">Projects</a>
-          <a href="#contact" class="hover:text-indigo-400">Contact</a>
-        </nav>
-      </div>
-    </header>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">YourName</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24">
-      <h1 class="text-5xl font-bold mb-4">Yo! I'm <span class="text-indigo-500">Your Name</span></h1>
-      <p class="text-xl text-gray-300 max-w-2xl">Creative Web Developer / Designer who builds stunning websites & awesome UI/UX.</p>
-      <a href="#projects" class="mt-8 inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg transition">See My Work</a>
-    </section>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <h2>Hello, I'm <span class="highlight">Your Name</span></h2>
+    <p>I build modern websites with HTML, CSS, and JavaScript.</p>
+    <a href="#projects" class="btn">See My Work</a>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="bg-gray-800 py-20 px-6">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">About Me</h2>
-        <p class="text-gray-400 text-lg leading-relaxed">
-          I'm a passionate frontend developer who loves creating sleek, interactive, and responsive websites. Skilled in HTML, CSS, Tailwind, and JavaScript — I focus on performance and clean code.
-        </p>
-      </div>
-    </section>
+  <!-- About -->
+  <section id="about" class="section dark">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a passionate frontend developer who loves clean design and simple code. I build responsive, fast websites and user-first interfaces.</p>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section class="py-20 px-6">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-12">My Tech Stack</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-gray-300">
-          <div class="hover:text-indigo-400">HTML</div>
-          <div class="hover:text-indigo-400">TailwindCSS</div>
-          <div class="hover:text-indigo-400">JavaScript</div>
-          <div class="hover:text-indigo-400">React</div>
-          <div class="hover:text-indigo-400">Git</div>
-          <div class="hover:text-indigo-400">Figma</div>
-          <div class="hover:text-indigo-400">Firebase</div>
-          <div class="hover:text-indigo-400">Node.js</div>
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Project One</h3>
+          <p>Responsive portfolio site built with vanilla CSS.</p>
+        </div>
+        <div class="card">
+          <h3>Project Two</h3>
+          <p>Product landing page with form and animations.</p>
+        </div>
+        <div class="card">
+          <h3>Project Three</h3>
+          <p>Blog layout with grid and dark mode toggle.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="bg-gray-800 py-20 px-6">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
-        <div class="grid md:grid-cols-3 gap-10">
-          <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
-            <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
-            <p class="text-gray-400 mb-4">Personal responsive portfolio built with TailwindCSS.</p>
-            <a href="#" class="text-indigo-400 hover:underline">Live Preview →</a>
-          </div>
-          <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
-            <h3 class="text-xl font-semibold mb-2">Landing Page</h3>
-            <p class="text-gray-400 mb-4">Product landing page with animations and smooth scroll.</p>
-            <a href="#" class="text-indigo-400 hover:underline">Live Preview →</a>
-          </div>
-          <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
-            <h3 class="text-xl font-semibold mb-2">Dashboard UI</h3>
-            <p class="text-gray-400 mb-4">Admin dashboard with charts and dark mode.</p>
-            <a href="#" class="text-indigo-400 hover:underline">Live Preview →</a>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Contact -->
+  <section id="contact" class="section dark">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Want to work together or just say hi?</p>
+      <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 px-6 bg-gray-900">
-      <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">Let's Connect</h2>
-        <p class="text-gray-400 mb-6">Have a project or want to collab? Hit me up!</p>
-        <a href="mailto:your.email@example.com" class="bg-indigo-500 hover:bg-indigo-600 py-3 px-6 rounded-lg font-semibold text-white">Email Me</a>
-      </div>
-    </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 YourName. All rights reserved.</p>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-center py-6 text-sm text-gray-500">
-      &copy; 2025 Your Name. Built with ❤️ and TailwindCSS.
-    </footer>
-
-    <!-- Animate on scroll -->
-    <script>
-      ScrollReveal().reveal('section', {
-        duration: 1000,
-        origin: 'bottom',
-        distance: '40px',
-        easing: 'ease-in-out',
-        reset: false
-      });
-    </script>
-  </body>
+</body>
 </html>
